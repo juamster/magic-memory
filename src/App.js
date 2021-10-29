@@ -43,10 +43,10 @@ function App() {
     setDisabled(false);
   };
 
-  // start game automatically 
+  // start game automatically
   useEffect(() => {
-    shuffleCards()
-  }, [])
+    shuffleCards();
+  }, []);
   // compare 2 selected cards
 
   useEffect(() => {
@@ -87,6 +87,10 @@ function App() {
         ))}
       </div>
       <p>Turns: {turns} </p>
+      <p>
+        This project was a coding follow along from{" "}
+        <b>The Net Ninja Build Web Apps with React & Firebase</b>
+      </p>
     </div>
   );
 }
